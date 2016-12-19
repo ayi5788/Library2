@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="js/bootstrap-3.3.0-dist/dist/css/bootstrap.css">
+    <style>
+        body,html,h1,h2,.panel{
+            padding: 0;
+            margin: 0;
+        }
+        #header{
+            /*background: url("PIC/banner.jpg") no-repeat;*/
+            /*background-size: cover;*/
+
+        }
+
+        body{
+            background: url("PIC/bg.jpg") ;
+        }
+        .info-box{
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="header" class="container">
+    <div class="page-header">
+        <h1><img src="PIC/logo.jpg" width="280" alt=""> <small>Search Results</small></h1>
+    </div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li>
+            <a id="Tinderbooks" href="#">Tinderbooks</a>
+        </li>
+        <li>
+            <a id="MyLibrary" href="#">My Library</a>
+        </li>
+        <li>
+            <a id="Request" href="#">Request</a>
+        </li>
+
+        <form id="search" action="" class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <p class="navbar-text navbar-right">Signed in as
+            <a href="#" class="navbar-link">Mark Otto</a>
+            <a id="Logout" href="#">Log out</a>
+        </p>
+    </ul>
+</div>
+    <!--查找结果-->
+    <div id="Results" class="container">
+        <div class="panel panel-success col-md-12 ">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Book Picture</div>
+
+            <div class="panel-body">
+                <p>pic</p>
+            </div>
+            <div class="panel-heading">Book Name</div>
+
+            <div class="panel-body">
+                <p>姜庆宇</p>
+            </div>
+            <div class="panel-heading">Author</div>
+            <div class="panel-body">
+                <p>jiang</p>
+            </div>
+            <div class="panel-heading">Edition</div>
+            <div class="panel-body">
+                <p>阿姨</p>
+            </div>
+            <div class="panel-heading">Description</div>
+                    <div class="panel-body">
+                     <p>36</p>
+             </div>
+        </div>
+        <!--给别人发送请求，看别人主页-->
+        <div id="Results-request " class="row col-md-12">
+            <button type="button" class="btn btn-success col-md-6">Send a request</button>
+            <button type="button" class="btn btn-danger col-md-6">See Username ProFile</button>
+        </div>
+    </div>
+</body>
+</html>
