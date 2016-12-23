@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>book rental system</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="../app/static/style.css" type="text/css" />
+    <style>
+      .center{
+        width: 70%;
+        margin: 3% auto;
+        background-color: #eee;
+        padding: 10px 10px;
+      }
+      .d-left{
+        position: relative;
+          float: left;
+          width: 260px;
+      }
+      .d-right{
+        position: relative;
+          float: left;
+          width: 500px;
+          padding: 5px 5px;
+          height: 360px;
+      }
+      .d-bottom{
+          position: relative;
+          float: left;
+          margin-left: 400px;
+      }
+      .text-center{
+        text-align: center;
+      }
+      .text-right{
+        text-align: right;
+      }
+      .f-left{
+        float: left;
+      }
+      .btn {
+        font-size: 20px;
+        line-height: 48px;
+        background: #FFC41D;
+        text-align: center;
+        border: none;
+        width: 302px;
+        font-family: "Microsoft YaHei";
+        cursor: pointer;
+        color: #fff;
+      }
+  </style>
+</head>
+<body>
+  <div id="page">
+    <div id="logo">
+      <h1 align="center"><a href="/" id="logoLink">Book rental system</a></h1>
+    </div>
+
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="#/renturnbooks.html">return books</a></li>
+        <li><a href="#/rentbooks.html">rent books</a></li>
+         <div id="login">
+        <li>
+
+          <a href="{{ url_for('login') }}">log in</a>
+             </li>
+        </div>
+
+        <li><a href="#/logout.html">log out</a></li>
+      </ul>
+
+        <div id="search">
+          <input type="text">
+          <input type="submit" value="search">
+        </div>
+    <div id="content">
+      <h2>Login</h2>
+        <form action="/login_com" method=post>
+          <table class="center" style="height: 200px;">
+            <tr>
+              <td class="text-right">Username:</td>
+              <td><input type=text name=username></td>
+            </tr>
+            <tr>
+              <td class="text-right">Password:</td>
+              <td><input type=password name=password></td>
+            </tr>
+            <tr>
+              <td colspan=2 class="text-center"><input class=btn type=submit value=Login></td>
+               <td colspan=2 class="text-center">
+               <li><a class = btn href ="{{ url_for('register') }}">Register</a></li>
+              </td>
+            </tr>
+          </table>
+        </form>
+
+    </div>
+    <div id="footer">
+      <p>
+        contact us <a href="/" target="_blank">[12345678]</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

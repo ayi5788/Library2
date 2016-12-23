@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="DBLib -1" uuid="6efcb0a1-0857-40b3-b291-8a62195707c4">
+      <secret-storage>master_key</secret-storage>
+    </data-source>
+  </component>
+</project>

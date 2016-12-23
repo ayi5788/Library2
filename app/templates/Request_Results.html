@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Search Results</title>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="js/bootstrap-3.3.0-dist/dist/css/bootstrap.css">
+    <title>Request Results</title>
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/js/bootstrap-3.3.0-dist/dist/css/bootstrap.css">
     <style>
         body,html,h1,h2,.panel{
             padding: 0;
@@ -18,18 +18,21 @@
         }
 
         body{
-            background: url("PIC/bg.jpg") ;
+            background: url("../static/PIC/bg.jpg") ;
         }
         .info-box{
             text-align: center;
 
+        }
+        .panel-primary>.panel-heading{
+            background:linear-gradient(to right, #2aabd2, white);
         }
     </style>
 </head>
 <body>
     <div id="header" class="container">
     <div class="page-header">
-        <h1><img src="PIC/logo.jpg" width="280" alt=""> <small>Search Results</small></h1>
+        <h1><img src="../static/PIC/logo.jpg" width="280" alt=""> <small>Request Results</small></h1>
     </div>
     <ul class="nav nav-tabs" role="tablist">
         <li>
@@ -56,7 +59,7 @@
 </div>
     <!--查找结果-->
     <div id="Results" class="container">
-        <div class="panel panel-success col-md-12 ">
+        <div class="panel panel-primary col-md-12 ">
             <!-- Default panel contents -->
             <div class="panel-heading">Book Picture</div>
 
@@ -83,7 +86,7 @@
         </div>
         <!--给别人发送请求，看别人主页-->
         <div id="Results-request " class="row col-md-12">
-            <button type="button" class="btn btn-success col-md-6">Send a request</button>
+            <button type="button" class="btn btn-success col-md-6">Confirm the request</button>
             <button type="button" class="btn btn-danger col-md-6">See Username ProFile</button>
         </div>
     </div>
